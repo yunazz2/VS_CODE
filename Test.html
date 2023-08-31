@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여긴 탭 웹 페이지 제목</title>
+</head>
+<body>
+    <h1>Hello HTML~!</h1>
+    <p>문서 내용입니다.</p>
+    <h2>부제목</h2>
+    <h3>부제목 입니다.</h3>
+</body>
+</html>
+
+
+<!-- 이론 정리 -->
+[텍스트 서식 태그]
+b           : 볼드체 (bold)
+i           : 이탤릭체 (italic)
+strong      : 강조 (볼드체)
+em          : 강조 (기울임체)
+code        : 텍스트가 코드임을 표시
+sup         : 위첨자
+sub         : 아래첨자
+hr          : 구분선 (수평선)
+
+
+[HTML 엔터티 (특수문자)]
+&nbsp;      : 공백 문자 한 개
+&lt;        : <
+&gt;        : >
+&quot;      : "
+&amp;       : &
+
+
+[]
+<p></p>     : 문단 사이의 여백을 가지는 텍스트 태그
+<br>        : 개행(줄 바꿈 태그) [엔터] - break lint
+<pre></pre> : 입력한 그대로(공백, 개행 포함)의 텍스트를 화면에 출력하는 태그
+
+
+[a 태그]
+* 속성
+- href : 이동할 경로(파일 경로, URL, id 속성)
+
+- 경로
+* 절대 경로 : href="http://www.naver.com"   다른 웹 사이트로 이동
+* 상대 경로 : href="../../test.html"        상위 경로의 다른 문서로 이동
+* 문서 내부 : href="#text"                  id 속성이 text인 요소로 이동
+
+*) ../      : 상위 경로
+    ./      : 현재 경로
+
+- target
+* _blank    : 새 창에서 열기
+* _self     : 현재 창에서 열기
+* _parent   : 부모 프레임에서 열기
+* _top      : 최상위 프레임에서 열기

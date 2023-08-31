@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layout</title>
+
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: black;
+            height: 80px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            float: left;
+            display: block;
+            width: 100px;
+            height: 100%;
+            padding: 10px 20px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: cornflowerblue;
+        }
+
+        section {
+            margin: 0 auto;
+            width: 1024px;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 200px;
+        }
+
+        footer {
+            background-color: lightgray;
+            min-height: 80px;
+        }
+
+        footer .copy {
+            float: left;
+            line-height: 80px;
+            padding: 0px 20px;
+        }
+
+        footer .family {
+            float: right;
+            line-height: 80px;
+            min-width: 120px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://naver.com">네이버</a>
+            <a href="http://kakao.com">카카오</a>
+            <a href="http://youtube.com">유튜브</a>
+        </nav>
+    </header>
+    <section>
+        <h1>My Page</h1>
+        <p>My Page에 오신 걸 환영합니다~!</p>
+    </section>
+
+    <hr>
+    
+    <section>
+        <h1>2번째 섹션</h1>
+        <p>2번째 섹션 영역 입니다~!</p>
+        <article>
+            풀이 어디 피어나기 끝에 거선의 청춘 그들은 피다. 사랑의 소금이라 고동을 미인을 아니다. 미묘한 그들은 피어나기 같이 두기 찬미를 얼음이 하는 밝은 아니다. 미인을 인간은 살았으며, 돋고,
+            위하여, 관현악이며, 같은 위하여서 있는 것이다. 곳이 두기 충분히 풀밭에 수 그것은 그들을 살았으며, 철환하였는가? 풍부하게 인간의 주는 눈이 심장은 만천하의 길을 것이다. 있는 따뜻한 얼마나
+            밝은 힘있다. 가장 꽃이 인간이 이상 아니다. 관현악이며, 피가 아니한 우리의 풍부하게 속잎나고, 가장 교향악이다. 든 같이 내는 그들은 반짝이는 과실이 시들어 구할 이것이다. 청춘에서만 풀이
+            착목한는 이것이다.
+        </article>
+    </section>
+
+    <hr>
+
+    <section>
+        <h1>3번째 섹션</h1>
+        <p>3번째 섹션입니다.</p>
+    </section>
+    <footer>
+        <p class="copy">Copyrigt ⓒ ALOHA CLASS. ALL Rights Reserved</p>
+        <p class="family">
+            <select name="family">
+                <option value="1">네이버</option>
+                <option value="2">카카오</option>
+                <option value="3">유튜브</option>
+            </select>
+        </p>
+    </footer>
+</body>
+</html>

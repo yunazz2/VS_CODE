@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* TODO: 여기에 작성해보세요 */
+form label{
+    display: inline-block;
+    width: 100px;
+}
+
+input[type^='t'],
+textarea {
+    border: 1px solid lightgrey;
+    padding: 8px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+textarea {
+    resize: none;
+}
+
+label[for^='co'] {
+    position: relative;
+    top: -120px;
+}
+
+input[type^='b'] {
+    padding: 8px 8px;
+    border: 1px solid pink;
+    background-color: pink;
+    color: white;
+    border-radius: 10px;
+}
+
+/* active : 마우스를 누르고 있는 상태 */
+input[type^='b']:active {
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+}

@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    border: 5px dashed pink;
+    margin: 100px auto;         /* m100-auto */
+    text-align: center;
+}
+
+section {
+    margin: 100px auto;
+    width: 900px;
+    height: 200px;
+    border: 3px solid grey;     /* border3-solid-grey */
+}
+
+.solve-1 {padding: 50px 0;}
+.solve-2 {border-top: 1px solid darkgray;}
+
+.solve-3 {margin-top: 0; margin-bottom: 200px;}
+.solve-3:first-of-type {margin-top: 200px;}

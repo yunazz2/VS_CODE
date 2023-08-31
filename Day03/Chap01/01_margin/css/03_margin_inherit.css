@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+    width: 1200px;
+    border: 3px dashed pink;
+    margin: auto;
+}
+
+
+section {
+    /* inherit : 부모 요소의 지정 값을 물려받아서 적용 */
+    /* 
+        부모 요소 : .container
+        적용 값   : inherit
+    */
+    width: 900px;
+    height: 200px;
+    border: 3px solid gray;
+    margin: inherit;        /* => 부모 요소로부터 물려받아서 auto가 적용 됨 */
+}

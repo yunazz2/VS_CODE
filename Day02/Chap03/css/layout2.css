@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* 
+    전체 선택자를 이용. 모든 선택자의 margin과 padding을 0으로 지정
+    : 요소가 갖는 기본 여백을 제거
+ */
+ * {margin: 0; padding: 0;}
+
+
+ /* TODO: 여기에 작성해보세요 */
+body {
+    background-color: snow;
+}
+
+
+header {
+    height: 85px;
+    background-color: azure;
+    padding: 10px;
+}
+
+
+header h1 {
+    float: left;
+    font-size: 1.8rem;
+}
+
+
+header ul {
+    float: right;
+    list-style-type: none;
+}
+
+
+header ul li {
+    display: inline-block;
+}
+
+
+article {
+    min-height: 500px;
+}
+
+
+article aside {
+    float: left;
+    width: 300px;
+    height: 500px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+
+article section {
+    float: right;
+    width: calc(100% - 300px);          /* w */
+    height: 500px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+
+footer {
+    height: 10px;
+    line-height: 10px;              /* lh10px */
+    text-align: center;
+    background-color: thistle;
+    padding: 20px;
+    
+}
+
+
+li {list-style-type: none;}         /* lstn */
+
+
+/* 클래스 선택자 */
+/* TODO: 여기에 작성해보세요 */
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+
+/* 종속선택자 */
+/* TODO: 여기에 작성해보세요 */
+h1.logo { /* h1들 중에 클래스가 logo인 */
+    background: url(../img/logo.png) no-repeat center left;
+    background-size: cover;
+    width: 260px;
+    height: 80px;
+    margin-left: 200px;
+    text-indent: -200px;
+}
