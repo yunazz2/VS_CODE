@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+    <link rel="stylesheet" href="css/01_tab.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="tab-box">
+            <!-- 탭 버튼 * name이 동일하면 체크박스 단일 선택! 동일하지 않으면 다중 선택!-->
+            <input type="radio" id="tab1" name="tab" checked>   <!-- name옆에 checked는 창을 처음에 열자마자 tab1이 선택되어 있는 상태로 만들기 위해 넣음 -->
+            <label for="tab1" class="tab-item">Tab 1</label>
+
+            <input type="radio" id="tab2" name="tab">
+            <label for="tab2" class="tab-item">Tab 2</label>
+
+            <input type="radio" id="tab3" name="tab">
+            <label for="tab3" class="tab-item">Tab 3</label>
+
+            <!-- 탭 내용 -->
+            <div class="tab-content" id="tab1-content">
+                <img src="img/1.jpg" alt="1" width="300">
+            </div>
+
+            <div class="tab-content" id="tab2-content">
+                <img src="img/2.jpg" alt="2" width="300">
+            </div>
+            
+            <div class="tab-content" id="tab3-content">
+                <img src="img/3.jpg" alt="3" width="300">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

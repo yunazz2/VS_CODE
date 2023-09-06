@@ -1,0 +1,35 @@
+* {box-sizing: border-box;}
+
+
+.btn {
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn.lg {display: block; width: 100%; margin: 10px 0;}
+
+.success {background-color: rgb(150, 202, 52);}
+.success:hover {background-color:  rgb(112, 151, 40);}
+.success:active {background-color:  rgb(150, 202, 52);}
+
+
+.info {background-color: rgb(76, 135, 245);}
+.info:hover {background-color: rgb(45, 90, 175);}
+.info:active {background-color: rgb(77, 134, 241)}
+
+.warning {background-color: rgba(255, 0, 106, 0.699);}
+.warning:hover {background-color: rgba(180, 3, 77, 0.699);}
+.warning:active {background-color: rgba(255, 0, 106, 0.699);}
+
+.danger {background-color: rgba(253, 52, 52, 0.829);}
+.danger:hover {background-color: rgba(185, 2, 2, 0.699);}
+.danger:active {background-color: rgba(255, 0, 0, 0.699);}
+
+.default {background-color: rgb(35, 170, 200);}
+.default:hover {background-color: rgb(23, 112, 133);}
+.default:active {background-color: rgb(35, 170, 200);}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+    <script>
+        let a = 10;
+        let b = '10';
+        let c = '10';
+        let d = 'test';
+        let e = 'test';
+        let f   // => undefined
+
+        console.log("a == b : " + (a == b));      // a 안의 값 : 10 과 b 안의 값 : 10 비교
+        console.log("a === b : " + (a === b));    // a 자체 : 10 과 b 자체 : '10' 비교
+
+        console.log("b == c : " + (b == c));
+        console.log("d == e : " + (d == e));
+        
+        // NaN이란? : Not a Number
+        // 숫자 연산을 했을 때, 유효한 숫자 데이터를 연산할 수 없을 때 반환
+        console.log(f + a); // undefined + 10 => NaN 반환
+        console.log(f + b); // undefined + '10' => undefined10 반환(null을 'undefined'라는 문자열로 변환)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

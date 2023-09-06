@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건 연산자 condition</title>
+    <script>
+        let name = prompt('이름을 입력하세요.');
+
+        // 조건 연산자
+        // (조건) ? (참) : (거짓)
+        let check = (name == '이유나') ? true : false;
+        
+        // 위의 조건 연산자를 if문을 사용하여 표현해보자.
+        if(name == '이유나') {
+            check = true;
+        }
+        else {
+            check = false;
+        }
+        //////////////////////////////////////////////////
+
+
+        if(check) {
+            alert('본인 입니다.')
+        }
+        else {
+            alert(`이유나가 아닌 당신의 이름은 ${name} 입니다.`)
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

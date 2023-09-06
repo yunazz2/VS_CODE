@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if 조건문</title>
+    <script>
+        // if 조건문
+        let a = 10;
+        let b = 20;
+
+        if(a > b) {
+            console.log(`${a}이 ${b}보다 크다.`);
+        } // a가 b보다 작아서 false니까 실행이 안된다.
+
+
+        let input = prompt('숫자를 입력하세요.'); // 입력 받은 값을 string 타입으로 반환
+        // input = Number(input);
+
+
+        if(input > 0) {
+            alert('양수 입니다.');
+        }
+        if(input < 0) {
+            alert('음수 입니다.')
+        }
+
+        console.log(input + 100); // prompt라는 함수는 입력받은 값을 string 타입으로 반환한다. 숫자로 변환하여 반환하고 싶으면 ln18처럼 숫자형으로 변환하면 된다.
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

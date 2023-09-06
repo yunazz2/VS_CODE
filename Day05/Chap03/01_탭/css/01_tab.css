@@ -1,0 +1,61 @@
+.container{
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.tab-box {
+    width: 600px;
+    margin: 50px auto;
+    background-color: snow;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 체크 박스(타입이 radio)는 숨겨주자 */
+[type="radio"] {display: none;}
+
+/* 탭(label) */
+.tab-item {
+    display: inline-block;
+    width: calc(100% / 3);
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+    user-select: none;     /* 탭 영역에 유저가 드래그를 했을 때 드래그 되지 않도록 */
+}
+
+
+.tab-box input:checked + label/* 인접 선택자 */,
+.tab-item:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* 내용 영역 */
+.tab-content {
+    padding: 40px;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
+    display: none;  /* 탭을 선택할 때 해당 요소만 보여줄거라 일단 다 숨김 */
+    
+}
+
+/* tab1이 선택 됐을 때, 형제자매 요소인 tab1-content가 보여지게 한다 */
+/* 
+    tab1 (label 1번)을 선택
+    => 연결된 radio 버튼이 선택 (:checked)
+    => 형제자매요소인 1번 내용 영역을 출력
+*/
+#tab1:checked ~ #tab1-content,
+#tab2:checked ~ #tab2-content,
+#tab3:checked ~ #tab3-content {
+    display: block;
+}
