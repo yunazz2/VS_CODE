@@ -1,0 +1,43 @@
+<!-- 0908 11:50 강의 참고 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuerry 준비하기</title>
+
+    <!-- jQuerry 라이브러리 파일로 포함하기 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- 
+        CDN(Connect Delivery Network)
+        : 컨텐츠를 빠르게 다운 받을 수 있도록 해주는 분산된 서버
+
+     -->
+    <!-- jQuerry CDN 방식으로 포함하기 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+
+    <script>
+    // javascript - 문서 준비 이벤트
+    // document.addEventListener('DOMContentLoaded', function() { })
+
+
+
+    // jQuerry - 문서 준비 이벤트
+    //   $(document).ready(function() {
+    //     alert('Hello jQuerry~!')
+    // })
+
+    // 축약형
+    $(function() {
+        alert('Hello jQuerry~!')
+        // $('h1') : document.getElementsByTagName('h1')
+        $('h1').text('Hello jQuerry~!')
+    })
+
+    </script>
+</head>
+<body>
+    <h1>안뇽하세요</h1>    
+</body>
+</html>
