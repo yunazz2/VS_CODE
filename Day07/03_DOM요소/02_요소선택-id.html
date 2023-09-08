@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소 선택 - tag</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // id로 요소 선택 : getElementById()
+            const box = document.getElementById('box') // box라는 아이디를 가진 애를 화면에 보여준다.
+
+            box.style.width = '200px'   // box의 가로 사이즈
+            box.style.height = '200px'  // // box의 세로 사이즈
+            box.style.backgroundColor = 'pink'  // box의 배경 색상
+        })
+    </script>
+</head>
+<body>
+    <div id="box"></div>    <!-- box라는 아이디를 가진 div 태그 생성 -->
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로토타입</title>
+    <script>
+
+        // 프로토타입
+        // - 모든 객체가 프로토타입이라는 객체를 갖는다.
+        // - 해당 객체가 상속되는 정보를 제공하는 객체
+
+        // 프로토타입 객체 생성(생성자 함수로 객체 생성)
+        // - 객체 생성자 함수를 정의하여 프로토타입을 정의
+        function Person(name, age) {
+            this.name = name
+            this.age = age
+        }
+
+        // 객체 생성
+        let person = new Person('김조은', 20)
+
+        // 객체 속성(프로퍼티) 접근
+        document.write(`이름 : ${person.name} <br>`)
+        document.write(`나이 : ${person.age} <br><br>`)
+
+        // 객체 속성(프로퍼티) 삭제 => 20이라는 값이 없어지는게 아니라 속성 자체가 삭제되는 것.
+        delete person.age
+        
+        document.write(`나이 속성 삭제 후 : ${person.age} <br><br>`)
+        
+        let person2 = new Person('박조은', 30)
+        document.write(`이름 : ${person2["name"]} <br>`)
+        document.write(`나이 : ${person2["age"]} <br><br>`)
+
+        // 객체 생성 후 메소드 추가(자바는 클래스를 하나 만들어놓으면 다른 데에서 그 클래스에 변수나 뭐 다른걸 추가할 수가 없었는데 자바 스크립트는 가능하다.)
+        // 메모리 자원을 효율적으로 쓰기 위해
+        person2.printInfo = function() {
+            return this.name + '(' + this.age + ')'
+        }
+
+        // 객체 생성 후, 속성 추가
+        person2.title = '새로운 프로퍼티'
+
+        // document.write(person.printInfo() + '<br>')
+        document.write(person2.printInfo() + '<br>')
+        document.write('title : ' + person2.title + '<br>')
+
+
+        document.write('person.title : ' + person.title)
+
+        person.test()
+
+        Person.prototype.getInfo = function() {
+            document.write(`- 이름 : ${this.name} <br>
+                            - 나이 : ${this.age} <br>`)
+        }
+        
+        person.getInfo()
+        person2.getInfo()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

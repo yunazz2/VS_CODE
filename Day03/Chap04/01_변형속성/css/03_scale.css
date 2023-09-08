@@ -44,10 +44,26 @@
 */
 
 /* 👩‍💻TODO: 여기에 작성해보세요:) */
-.scale1:hover {  }
-.scale2:hover {  }
-.scale3:hover {  }
+.scale1:hover { transform: scale(2); }
+.scale2:hover { transform: scaleX(2); }
+.scale3:hover { transform: scaleY(2); }
 
 
 /* 이미지 확대 박스 적용하기 */
 /* 👩‍💻TODO: 여기에 작성해보세요:) */
+.img-box {
+    width: 100%;
+    height: 160px;
+    border: 3px solid rgb(255, 126, 147);
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    transition: all 0.5s;
+}
+.img-box img:hover{
+    transform: scale(1.2);
+    cursor: pointer;               /* 이미지에 마우스를 올렸을 때 클릭 가능한 포인터(손가락)처럼 바꾸기 */
+    transition: all 0.5s;
+}

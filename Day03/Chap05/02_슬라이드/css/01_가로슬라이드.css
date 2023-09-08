@@ -1,0 +1,37 @@
+/* 0904 11:19 강의 */
+.container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    border: 10px solid rgb(46, 46, 46);
+    overflow: hidden;
+    
+}
+
+.slide {
+    position: absolute;     /* 부모 요소를 기준으로 움직여야 한다. */
+    width: calc(800px * 3);
+    animation-name: slide;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+
+.slide img {
+    width: 800px;
+    height: 400px;
+    float: left;
+}
+
+@keyframes slide {
+    /* 방법 1 */
+    /* 33.333% {left: 0;}
+    66.666% {left: calc(-800px * 1);}
+    100% {left: calc(-800px * 2);} */
+    
+    /* 방법 2 */
+    33.333% {transform: translateX(0);}
+    66.666% {transform: translateX(calc(-800px * 1));}
+    100% {transform: translateX(calc(-800px * 2));}
+
+}

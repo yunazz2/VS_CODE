@@ -52,19 +52,17 @@ li:hover {
 .item img { width: 100%; }
 
 
-/* 
-    flex */
-
+/* flex */
 .flex-container {
     display: flex;
-    flex-wrap: wrap;    /* fxww */
-    justify-content: space-between;  /* jcsb */
+    flex-wrap: wrap;
+    justify-content: space-between;
     row-gap: 20px;
     column-gap: 10px;
 }
 
-.flex-container .item{
-    width: calc(100%/3 - 10px);
+.flex-container .item {
+    width: calc(100% / 3 - 10px);
     height: auto;
     box-sizing: border-box;
 }

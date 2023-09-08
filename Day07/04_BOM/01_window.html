@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+    <script>
+        document.write(`윈도우 가로 size : ${window.innerWidth} <br>`)
+        document.write(`윈도우 가로 size : ${window.innerHeight} <br>`)
+        document.write(`윈도우 outer 가로 size : ${window.outerWidth} <br>`)
+        document.write(`윈도우 outer 세로 size : ${window.outerHeight} <br>`)
+        document.write(`제목 : ${window.document.title} <br>`)  // 실행 시 열린 창 제목을 가져온다.
+
+        console.log('윈도우 세로 : ' + window.innerWidth);
+        console.log('윈도우 가로 : ' + window.innerHeight);
+
+
+        // 팝업 창 띄우기
+        // window.open('URL', 팝업창이름, 옵션)
+        // let popup = window.open('http://www.naver.com', '네이버', 'width=400, height=600')
+        // let popup = window.open('./popup.html', '팝업', 'width=400, height=600')
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            let btn = document.getElementById('btn')
+            btn.addEventListener('click', () => {
+                popup.close()   // 팝업 창 닫기
+            })
+
+            // 스크롤 이벤트 등록 (스크롤을 움직일 때 위치를 실시간으로 반환)
+            window.addEventListener('scroll', (event) => {
+                let scrollY = window.scrollY    // 현재 세로방향 스크롤 위치
+                let $scrollY = document.getElementById('scrollY')
+                $scrollY.textContent = scrollY
+                console.log(`scrollY : ${scrollY}`);
+
+                /* 
+                    스크롤 맨 아래 확인
+                    - 1. html의 전체 높이 확인
+                    - 2. window의 높이 확인
+                */
+               
+                // 1. html의 전체 높이 확인
+                let docHeight = document.documentElement.scrollHeight
+                console.log(`docHeight : ${docHeight}`);
+
+                // 2. window의 전체 높이 확인
+                let winHeight = window.innerHeight
+                console.log(`winHeight : ${winHeight}`);
+
+                if(winHeight + scrollY >= docHeight) {
+                    alert('스크롤의 끝 입니다.')
+                }
+
+            })
+            
+            // 지정한 위치로 스크롤 이동시키기
+            // scrollTo(가로 위치, 세로 위치) 보통 가로는 쓸 일 거의 없으니 0으로 둔다.
+            // window.scrollTo(0, 300)
+
+            let $top = document.getElementById('top')
+            $top.addEventListener('click', () => {
+                window.scrollTo(0,0)
+            }) // 스크롤을 맨 아래로 내린 후 [맨 위로 가기] 버튼 누르면 지정한 위치로 스크롤 옮기기
+        })
+    </script>
+    <style>
+        html {
+            /* 스크롤 부드럽게 이동 */
+            scroll-behavior: smooth ;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <button id="btn">팝업 닫기</button>
+    <h3>스크롤 위치 : <span id="scrollY"></span></h3>
+    <div style="height: 5000px;"></div>
+    <button id="top">맨 위로 가기</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 준비 이벤트</title>
+
+    <script>
+        // addEventListener('이벤트 타입', 콜백함수)
+        // : html 요소에 이벤트를 등록하는 함수
+        // DOMContentLoaded : 문서 객체 모델이 로딩됐을 때, 실행되는 이벤트
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // 문서가 모두 로딩 된 후에 실행
+            document.getElementById('title').innerHTML = '문서 준비 완료'
+
+        }) // 문서가 다 로딩 됐을 때 이 이벤트(콜백함수)를 실행시킬거다. (Day06 > Chap02 > 02_함수 고급 > 05_타이머 함수도 같은 원리)
+    </script>
+    
+</head>
+<body>
+    
+    <h1 id="title"></h1>
+
+</body>
+</html>
