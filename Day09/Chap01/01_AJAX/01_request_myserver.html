@@ -2,7 +2,7 @@
 <!-- 0911 14:40 강의 참고 -->
 <!-- 비동기일 때 화면 전환 0911 14:03 강의 참고 -->
 <!-- // 선생님 서버
-// let url = "http://192.168.30.119:8080/api/board?boardNo=" + boardNo -->
+// let url = "http://127.0.0.1:8080/api/board?boardNo=" + boardNo -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +30,7 @@
     <h3>게시글 쓰기</h3>
     <h4>FORM 전송(동기식) | AJAX 전송(비동기식)</h4>
     <!-- 비동기식은 회원가입시 아이디 중복확인 할 때 창을 전환해서 거기서 아이디가 사용 가능한지 알려주고 그런게 아니라(만약 창을 전환해서 알려주고 다시 기존 창으로 돌아오면 원래 써놨던 내용이 다 날아가니까 다시 써야 함 이건 정말 말도 안됑에ㅐ애) 기존 창에서 바로 사용 가능한지 아닌지 알려주는것 동기식은 그 반대-->
-    <form action="//192.168.30.119:8080/api/board" method="post">
+    <form action="//127.0.0.1:8080/api/board" method="post">
         <table>
             <tr>
                 <td><label for="title">제목</label></td>
@@ -64,7 +64,7 @@
         form 태그는 get, post 방식만 지원하는데 수정은 put 방식을 써야한다.
         그래서 여기는 post로 써놓은 후 아래 294ln에 PUT 방식이라고 써놨다.
      -->
-    <form action="//192.168.30.119:8080/api/board/update" method="post">
+    <form action="//127.0.0.1:8080/api/board/update" method="post">
         <table>
             <tr>
                 <td><label for="boardNo">게시글 번호</label></td>
@@ -102,7 +102,7 @@
         form 태그는 get, post 방식만 지원하는데 삭제는 put 방식을 써야한다.
         그래서 여기엔 post 형식으로 유지하고, 405ln에 DELETE라고 썼다.
      -->
-    <form action="//192.168.30.119:8080/api/board/delete" method="post">
+    <form action="//127.0.0.1:8080/api/board/delete" method="post">
         <table>
             <tr>
                 <td><label for="boardNo">게시글 번호</label></td>
@@ -187,7 +187,7 @@
 
             let boardNo = document.getElementById('boardNo').value
             // 선생님 서버
-            let url = "http://192.168.30.119:8080/api/board?boardNo=" + boardNo
+            let url = "http://127.0.0.1:8080/api/board?boardNo=" + boardNo
     
             // 요청 설정
             // request.open("요청 메소드", url, 비동기여부)
@@ -233,8 +233,8 @@
                     alert(response)
 
                     // 비동기여도 아래 문장을 넣으면 페이지 이동 가능
-                    location.href = 'http://192.168.30.119:8080/board/list'
-                    // location.assign('http://192.168.30.119:8080/board/list')
+                    location.href = 'http://127.0.0.1:8080/board/list'
+                    // location.assign('http://127.0.0.1:8080/board/list')
                     // location.href = './list.html' // 같은 경로에 list라는 html 파일을 만들어서 페이지 이동도 가능
                 }
 
@@ -245,7 +245,7 @@
             }
 
             // 요청 설정
-            let url = 'http://192.168.30.119:8080/api/board'
+            let url = 'http://127.0.0.1:8080/api/board'
 
             request.open("POST", url, true)
             request.setRequestHeader("Content-Type", "application/json")
@@ -292,7 +292,7 @@
         }
 
         // 요청 설정
-        let url = 'http://192.168.30.119:8080/api/board'
+        let url = 'http://127.0.0.1:8080/api/board'
 
         request.open("POST", url, true)
         request.setRequestHeader("Content-Type", "application/xml")
@@ -337,7 +337,7 @@
         }
 
         // 요청 설정
-        let url = 'http://192.168.30.119:8080/api/board'
+        let url = 'http://127.0.0.1:8080/api/board'
 
         request.open("PUT", url, true)
         request.setRequestHeader("Content-Type", "application/json")
@@ -386,7 +386,7 @@
         }
 
         // 요청 설정
-        let url = 'http://192.168.30.119:8080/api/board'
+        let url = 'http://127.0.0.1:8080/api/board'
 
         request.open("PUT", url, true)
         request.setRequestHeader("Content-Type", "application/xml")
@@ -425,7 +425,7 @@
         }
 
         // 요청 설정
-        let url = 'http://192.168.30.119:8080/api/board'
+        let url = 'http://127.0.0.1:8080/api/board'
 
         request.open("DELETE", url, true)
         request.setRequestHeader("Content-Type", "application/json")
@@ -468,7 +468,7 @@
         }
 
         // 요청 설정
-        let url = 'http://192.168.30.119:8080/api/board'
+        let url = 'http://127.0.0.1:8080/api/board'
 
         request.open("DELETE", url, true)
         request.setRequestHeader("Content-Type", "application/xml")
@@ -520,7 +520,7 @@
                 }
             }
 
-            let url = "http://192.168.30.119:8080/api/board"
+            let url = "http://127.0.0.1:8080/api/board"
 
             request.open("GET", url, true)
             request.setRequestHeader("Content-type", "application/json")
