@@ -1,0 +1,123 @@
+<!-- 나중에 모바일로 봤을 때 서브 메뉴가 메뉴 바 안에 들어가도록 추가하고 싶다. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평가시험 - 이유나</title>
+
+    <style>
+        @font-face {
+            font-family: 'NanumBarunGothic';
+            src: url('./css/fonts/NanumBarunGothic.otf')
+        }
+
+        body {
+            font-family: 'NanumBarunGothic';
+        }
+    </style>
+
+    <!-- 폰트 어썸 라이브러리(사람 아이콘이나 메뉴바 아이콘 사용을 위해) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/bx_slider_style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/bx_script.js"></script>
+
+</head>
+<body>
+
+    <!-- 웹 상단 부분 -->
+    <header>
+        <!-- util -->
+        <div class="util">
+            <ul class="util-menu">
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+            </ul>
+        </div>
+
+        <!-- menu -->
+        <div class="menu">
+            
+            <div class="menu-left">
+                <a href=""><i class="fa fa-user"></i></a> <!-- 사람 모양 아이콘 -->
+            </div>
+
+            <div class="menu-center">
+                <!-- pc로 봤을 때의 메뉴바 -->
+                <nav class="pc">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="board.html">Board</a></li>
+                        <li><a href="gallary.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="menu-right">
+                <a href=""><i class="fa fa-bars"></i></a> <!-- 메뉴 바 모양 아이콘 -->
+            </div>
+            
+        </div>
+    </header>
+
+    <br>
+    
+    <!-- section -->
+    <section>
+        <h1>Section1 - 이미지 슬라이드</h1>
+        <!-- 이미지 슬라이드 -->
+        <div class="wrap">
+            <div class="slide-container">
+                <!-- (.slide>img[src="img/slide$$.jpg"][alt="이미지$$"][title="이미지$$"])*10 -->
+                <div class="slide"><img src="./img/slide01.jpg" alt="이미지01" title="이미지01"></div>
+                <div class="slide"><img src="./img/slide02.jpg" alt="이미지02" title="이미지02"></div>
+                <div class="slide"><img src="./img/slide03.jpg" alt="이미지03" title="이미지03"></div>
+                <div class="slide"><img src="./img/slide04.jpg" alt="이미지04" title="이미지04"></div>
+                <div class="slide"><img src="./img/slide05.jpg" alt="이미지05" title="이미지05"></div>
+                <div class="slide"><img src="./img/slide06.jpg" alt="이미지06" title="이미지06"></div>
+                <div class="slide"><img src="./img/slide07.jpg" alt="이미지07" title="이미지07"></div>
+                <div class="slide"><img src="./img/slide08.jpg" alt="이미지08" title="이미지08"></div>
+                <div class="slide"><img src="./img/slide09.jpg" alt="이미지09" title="이미지09"></div>
+                <div class="slide"><img src="./img/slide10.jpg" alt="이미지10" title="이미지10"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+        <h1>Section2 - 최신 이미지</h1>
+
+        <div class="latestimg-container">
+            <div class="left-img">
+                <img src="./img/slide01.jpg" alt="이미지01">
+            </div>
+            <div class="center-img">
+                <img src="./img/slide02.jpg" alt="이미지02">
+            </div>
+            <div class="right-img">
+                <img src="./img/slide03.jpg" alt="이미지03">
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+
+    <!-- 웹 하단 부분 -->
+    <footer>
+        <div class="copyright">
+            <p>copyright All right reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
