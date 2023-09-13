@@ -75,7 +75,6 @@ header {
 .menu .menu-left a:hover {background-color: rgb(255, 112, 136);}
 .menu .menu-right a:hover {background-color: rgb(255, 112, 136);}
 
-
 .menu .menu-center nav ul {
     display: flex;
     align-items: center;
@@ -108,15 +107,140 @@ section {
 }
 /* section안에 들어있는것들은 텍스트 align을 항상 center로 준다. */
 
+/* --------------------- section2 ---------------------*/
 .latestimg-container {
     margin:0 auto;
     display: flex;
     justify-content: center;
-    width: 800px;
+    width: 900px;
     height: 400px;
-    border: 1px solid black;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(245, 245, 245);
     text-align: center;
+}
+
+.latestimg-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.latestimg-container .img {
+    width: calc(100%/3 - 30px);
+    height: calc(100% - 30px);
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.latestimg-container div h4 {
+    margin-top: 15px;
+}
+
+.latestimg-container div p {
+    margin-left: 15px;
+    text-align: left;
+}
+
+.latestimg-container div a {
+    margin-top: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.latestimg-container .datezz {
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+    color: rgb(207, 207, 207);
+}
+
+.latestimg-container div img {
+    width: 100%;
+    height: 200px;
+}
+
+/* section3 */
+.section3 {
+    width: 100%;
+}
+
+.section3 .section3-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 900px;
+    height: 400px;
+    /*border: 1px solid black;*/
+    background-color: white;
+}
+
+.section3 .section3-img .img-box {
+    width: calc(100%/2 - 50px);
+    height: 300px;
+    /*border: 1px solid black;*/
+}
+
+.section3 .section3-img .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.section3 .section3-img .text-box {
+    position: relative;
+    text-align: center;
+    width: calc(100%/2 - 50px);
+    height: 300px;
+    /* border: 1px solid black; */
+}
+
+.section3 .section3-img .text-box h2 {
+    position: relative;
+    top: 50px;
+}
+
+.section3 .section3-img .text-box p {
+    position: relative;
+    top: 100px;
+}
+
+.section3 .section3-img .text-box button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(207, 207, 207);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.section3 .section3-img .text-box button:hover {
+    filter: brightness(90%);
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+
+/* section4 */
+.section4 {
+    width: 100%;
+}
+
+.section4 .section4-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 900px;
+    height: 400px;
+    border: 1px solid red;
+    background-color: white;
 }
 
 
@@ -125,4 +249,7 @@ footer {
     background-color: white;
     text-align: center;
     font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
